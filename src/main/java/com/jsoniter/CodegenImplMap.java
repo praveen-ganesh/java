@@ -16,6 +16,7 @@ class CodegenImplMap {
         append(lines, "if (map == null) { map = new {{clazz}}(); }");
         append(lines, "if (!com.jsoniter.CodegenAccess.readObjectStart(iter)) {");
         append(lines, "return map;");
+        
         append(lines, "}");
         append(lines, "do {");
         if (keyType == String.class) {
